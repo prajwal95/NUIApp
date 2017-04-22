@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prajwal.nuiapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity
+            android:name="com.example.prajwal.nuiapp.IntroActivity"
+            android:label="To-Do" >
+        </activity>
+
+
+        <activity
+            android:name="com.example.prajwal.nuiapp.Welcome"
+            android:label="To-Do" >
+        </activity>
+
+
+        <activity
+            android:name="com.example.prajwal.nuiapp.Help"
+            android:label="HELP MENU To-Do" >
+        </activity>
+        <activity
+
+            android:name="com.example.prajwal.nuiapp.TaskActivity"
+            android:label="To-Do" >
+            </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name="com.example.prajwal.nuiapp.ReminderActivity"
+            android:label="To-Do" >
+        </activity>
+        <receiver android:name=".Task" android:process=":remote" />
+
+
+    </application>
+
+</manifest>
